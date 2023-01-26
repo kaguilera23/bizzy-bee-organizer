@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  background-color: rgb(247, 237, 218);
 }
 
 textarea {
@@ -21,27 +22,27 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(247, 237, 218);
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: rgb(247, 237, 218);
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #eedeee;
+  background-color: #faf1fc;
   color: white;
 }
 
 .present {
-  background-color: #e297cf;
+  background-color: #eba5df;
   color: white;
 }
 
 .future {
-  background-color: #9df09d;
+  background-color: #b9f3b9;
   color: white;
 }
 

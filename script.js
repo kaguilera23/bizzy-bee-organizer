@@ -2,7 +2,7 @@ var currentDayEl = document.getElementById("currentDay");
 var today = dayjs();
 
 currentDayEl.textContent = "Today is " + today.format("dddd, MMMM DD, YYYY")
-
+currentDayEl.style.fontSize = "60px"
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
