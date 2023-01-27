@@ -8,11 +8,15 @@ currentDayEl.style.fontSize = "60px"
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-console.log(today.hour())
+
 $(function () {
+
+
+  console.log(today.hour())
 
   var timeBlockParent = $(".container-fluid");
   var textArea = $(".description")
+
 
     //this = event.target = save button
   timeBlockParent.on("click", ".saveBtn", function (event) {
