@@ -23,7 +23,7 @@ $(function () {
   // Create Past, Present, Future colorings 
   // class Past = light pink, class Present = pink, class Future = green
   var timeSlots = $("div.container-fluid").children()
-  var currentHour = "hour-" + today.format("hh");
+  var currentHour = "hour-" + today.format("HH");
   
   $.each(timeSlots, function(index) {
 
