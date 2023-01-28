@@ -1,4 +1,4 @@
-# Busy-Bee-Organizer
+# Busy Bee Organizer
 
 ## Description
 
