@@ -11,11 +11,11 @@ currentDayEl.style.fontSize = "60px"
 
 $(function () {
 
+  // Add Click Event For Save Button
   var timeBlockParent = $(".container-fluid");
   var textArea = $(".description")
 
 
-    //this = event.target = save button
   timeBlockParent.on("click", ".saveBtn", function (event) {
     
     textArea = event.target.parentElement.children[1]
@@ -25,20 +25,19 @@ $(function () {
   })
   })
 
-  var timeSlots = $("div.container-fluid").children()
-  var currentHour = "hour-" + today.hour();
+  // Create Past, Present, Future colorings 
 
-  // console.log(timeSlots[4].id)
+  var timeSlots = $("div.container-fluid").children()
+  var currentHour = "hour-" + today.format("hh");
   
   $.each(timeSlots, function(index) {
 
     var slotHour = timeSlots[index].id
-    // console.log(timeSlots[index].id)
-    // console.log(timeSlots[index])
+
+    console.log(slotHour + currentHour)
 
     if (slotHour === currentHour) {
       var matches = timeSlots[index];
-      console.log(matches)
       $(matches).addClass("present")
     } else if (slotHour < currentHour){
       $(timeSlots[index]).addClass("past")
